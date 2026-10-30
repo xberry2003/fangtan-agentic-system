@@ -1,0 +1,23 @@
+.skill-picker{position:relative;display:flex}
+.skill-picker-menu{position:absolute;bottom:calc(100% + 10px);left:-3px;z-index:8;min-width:185px;border:1px solid var(--line);border-radius:12px;background:var(--page);box-shadow:0 8px 30px #493a2919;padding:7px}
+.skill-picker-menu>small{display:block;padding:8px;font-size:10px;color:var(--muted)}
+.skill-picker-menu>button{display:flex;align-items:center;gap:10px;width:100%;padding:10px;border-radius:7px;font-size:13px;text-align:left}
+.skill-picker-menu>button:hover{background:var(--soft)}
+.selected-skill,.message-skill{display:inline-flex;align-items:center;gap:7px;border:1px solid #cbb9a7;border-radius:7px;padding:5px 8px;background:var(--soft);font-size:12px;font-weight:500;color:var(--ink);margin-bottom:9px}
+.selected-skill>button{display:grid;place-items:center;padding:2px;margin-left:3px}
+.message-skill{font-size:11px;margin-bottom:8px}
+.report-skill-intake{margin:16px 0;border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:17px}
+.report-skill-intake header{display:flex;align-items:center;gap:9px;font-size:14px}
+.report-skill-intake>p{color:var(--muted);font-size:12px;line-height:1.8;margin:12px 0}
+.report-template-cards{display:grid;gap:8px}
+.report-template-cards>button{display:flex;align-items:flex-start;gap:9px;padding:12px;text-align:left;border:1px solid var(--line);border-radius:9px;font-size:12px}
+.report-template-cards>button>span{flex:1;min-width:0}.report-template-cards strong{font-weight:600}
+.report-template-cards small{display:block;color:var(--muted);font-size:11px;margin-top:5px;line-height:1.7}
+.report-template-cards>button[aria-pressed=true]{border-color:#b8987c;background:var(--soft)}
+.report-source-selection{margin-top:16px;font-size:12px}
+.report-source-selection summary{cursor:pointer;padding:8px 0}.report-source-selection summary span{color:var(--muted);margin-left:6px}
+.report-source-selection label{display:flex;gap:8px;padding:8px 0;overflow-wrap:anywhere;align-items:flex-start}
+.report-source-selection input{accent-color:#a87150;margin-top:3px;flex-shrink:0}
+.report-skill-intake footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:17px;font-size:12px}
+.floating-assistant .assistant-composer{overflow:visible;position:relative;z-index:2}
+.floating-assistant .chat-input>.attachment-chips{max-height:115px;overflow:auto}

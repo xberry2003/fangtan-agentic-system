@@ -1,0 +1,21 @@
+.conversation-management{flex:1;min-height:0;overflow:auto;padding:22px 18px}
+.conversation-management h2{font-size:19px;font-weight:600;margin:0}
+.conversation-management header p{font-size:12px;line-height:1.85;color:var(--muted);margin:9px 0 18px}
+.conversation-management form{display:flex;gap:8px;margin-bottom:18px}
+.conversation-management input{min-width:0;flex:1;border:1px solid var(--line);border-radius:8px;padding:10px 11px;font-size:12px;background:var(--surface)}
+.conversation-management form>button{display:flex;align-items:center;gap:5px;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:9px;white-space:nowrap;font-size:12px}
+.conversation-list{display:flex;flex-direction:column;gap:9px}
+.conversation-list article{display:flex;align-items:center;gap:7px;padding:13px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.conversation-list article.is-current{border-color:#bda68f;background:var(--soft)}
+.conversation-open{display:flex;align-items:center;gap:10px;text-align:left;flex:1;min-width:0}
+.conversation-open>span{flex:1;min-width:0}.conversation-open strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:500}
+.conversation-open small{display:block;font-size:10px;color:var(--muted);margin-top:6px}
+.conversation-status{font-size:10px;color:var(--muted);white-space:nowrap}
+.conversation-status.is-running{color:#9c6848}
+.conversation-status.is-running:before{content:'';display:inline-block;width:5px;height:5px;margin-right:5px;border-radius:50%;background:currentColor;animation:blink 1.2s infinite}
+.conversation-stop{display:grid;place-items:center;padding:6px;color:#9a654c}
+.assistant-session-slot{height:100%;min-height:0;display:flex;flex-direction:column}
+.assistant-session-slot[hidden]{display:none}
+.floating-assistant .assistant-tabs{gap:18px;padding-left:16px;padding-right:88px}
+.floating-assistant .assistant-tabs button{font-size:12px}
+.conversation-context-title{max-width:80%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;margin-left:auto}

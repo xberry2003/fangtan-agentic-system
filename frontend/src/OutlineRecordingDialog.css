@@ -1,0 +1,28 @@
+.outline-record-dialog{width:min(720px,calc(100vw - 32px));padding:0;max-height:85dvh;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--page);color:var(--ink)}
+.outline-record-dialog[open]{display:flex;flex-direction:column}
+.outline-record-dialog::backdrop{background:#27241f55;backdrop-filter:blur(3px)}
+.outline-record-dialog header{display:flex;justify-content:space-between;gap:20px;padding:25px 26px 18px}
+.outline-record-dialog h2{font:600 21px/1.5 var(--font-ui);margin:0}
+.outline-record-dialog p{font-size:13px;color:var(--muted);line-height:1.8;margin:9px 0 0}
+.outline-record-dialog header>button{align-self:flex-start;padding:5px}
+.outline-selection-tools{display:flex;align-items:center;gap:16px;padding:12px 26px;border-block:1px solid var(--line);font-size:12px}
+.outline-selection-tools>span{margin-right:auto;color:var(--muted)}
+.outline-question-options{overflow:auto;min-height:100px;padding:16px 22px;display:flex;flex-direction:column;gap:9px}
+.outline-question-options label{display:flex;align-items:flex-start;gap:13px;padding:15px;border:1px solid var(--line);border-radius:10px;background:var(--surface);cursor:pointer;font-size:14px;line-height:1.85}
+.outline-question-options label:has(input:checked){border-color:#c6ad96;background:var(--soft)}
+.outline-question-options input{margin-top:5px;accent-color:#a87150;width:17px;height:17px;flex-shrink:0}
+.outline-question-options small{font-size:11px;color:var(--muted);margin-right:10px}
+.outline-record-dialog footer{display:flex;justify-content:flex-end;gap:10px;padding:18px 26px;border-top:1px solid var(--line)}
+.report-paper .report-meta .outline-record-cta{display:inline-flex;align-items:center;gap:8px;padding:11px 17px;border-radius:9px;border:1px solid #b8987c;background:#eee1d4;color:#654329;font:600 13px/1.5 var(--font-ui);white-space:nowrap}
+.outline-record-cta:hover:not(:disabled){background:#e4d3c1}
+.interview-checklist{margin-top:22px;border:1px solid var(--line);border-radius:13px;padding:20px;background:var(--surface)}
+.interview-checklist header{display:flex;justify-content:space-between;gap:16px;font-size:14px}
+.interview-checklist header span,.interview-checklist>p{font-size:12px;color:var(--muted);line-height:1.8}
+.interview-question{display:flex;align-items:flex-start;gap:12px;padding:14px;margin-top:9px;border:1px solid var(--line);border-radius:9px;font-size:14px;line-height:1.8;cursor:pointer}
+.interview-question.is-asked{background:#f4e9de;border-color:#c6a68a}
+.interview-question input{width:18px;height:18px;accent-color:#b37350;margin-top:4px;flex-shrink:0}
+.interview-question small{display:block;font-size:11px;color:var(--muted)}
+.live-transcript{margin-top:20px;border-top:1px solid var(--line);padding-top:18px}
+.live-transcript h3{font-size:14px}.live-transcript>small{color:var(--muted);font-size:12px;line-height:1.8}
+.live-transcript-text{max-height:250px;overflow:auto;font-size:14px;line-height:1.9;white-space:pre-wrap;margin-top:14px}
+.live-transcript-text em{font-style:normal;color:var(--muted)}

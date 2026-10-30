@@ -1,0 +1,42 @@
+.studio-assistant.floating-assistant{right:auto;bottom:auto;max-width:none;max-height:none;overflow:visible;padding:0;isolation:isolate}
+.floating-assistant>.chat-view{overflow:hidden;border-radius:inherit;background:var(--page)}
+.floating-assistant .assistant-tabs{padding-right:100px}
+.assistant-drag-handle{position:absolute;right:51px;top:16px;width:28px;height:28px;display:grid;place-items:center;color:var(--muted);cursor:grab;touch-action:none;z-index:3;border-radius:6px}
+.assistant-drag-handle:hover{background:var(--soft);color:var(--ink)}
+.assistant-drag-handle:active,.movable-orb:active{cursor:grabbing}
+.assistant-orb.movable-orb{right:auto;bottom:auto;width:42px;height:42px;touch-action:none;cursor:grab}
+.assistant-resize-edge{position:absolute;z-index:4;touch-action:none}
+.edge-n,.edge-s{left:14px;right:14px;height:8px;cursor:ns-resize}
+.edge-n{top:-4px}.edge-s{bottom:-4px}
+.edge-e,.edge-w{top:14px;bottom:14px;width:8px;cursor:ew-resize}
+.edge-e{right:-4px}.edge-w{left:-4px}
+.edge-ne,.edge-nw,.edge-se,.edge-sw{width:16px;height:16px}
+.edge-ne{right:-4px;top:-4px;cursor:nesw-resize}.edge-nw{left:-4px;top:-4px;cursor:nwse-resize}
+.edge-se{right:-4px;bottom:-4px;cursor:nwse-resize}.edge-sw{left:-4px;bottom:-4px;cursor:nesw-resize}
+.assistant-size-handle{position:absolute;right:2px;bottom:2px;width:20px;height:20px;cursor:nwse-resize;touch-action:none;z-index:5;border-radius:0 0 15px 0}
+.assistant-size-handle:after{content:"";position:absolute;right:5px;bottom:5px;width:7px;height:7px;border-right:1px solid var(--muted);border-bottom:1px solid var(--muted);opacity:.55}
+.floating-assistant.is-adjusting{user-select:none}
+.floating-assistant .assistant-conversation{min-height:0;overflow:hidden}
+.floating-assistant .assistant-composer{max-height:65%;overflow:auto;min-height:0}
+/* Compact composer; the top grip grows the text area upward. */
+.floating-assistant .chat-input{position:relative;padding:12px 14px 9px}
+.floating-assistant .chat-input textarea{min-height:32px;max-height:min(280px,calc(var(--assistant-height) * .35));resize:none;overflow:auto;padding-bottom:0}
+.floating-assistant .chat-input>div{margin-top:4px}
+.composer-resize-handle{position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:58px;height:14px;display:grid;place-items:center;touch-action:none;cursor:ns-resize;border-radius:8px;z-index:2}
+.composer-resize-handle span{display:block;width:28px;height:3px;background:var(--line);border-radius:3px}
+.composer-resize-handle:hover span,.composer-resize-handle:focus-visible span{background:var(--muted)}
+@media(max-width:420px){.floating-assistant .assistant-tabs{gap:16px;padding-left:16px}.assistant-drag-handle{right:43px}}
+
+.floating-assistant .chat-input.attachment-drop-active{border-color:#a48768;background:var(--soft);box-shadow:0 0 0 2px #a4876822}
+.attachment-drop-label{display:block;color:var(--muted);font-size:12px;margin-bottom:8px}
+.floating-assistant .chat-input>.attachment-chips,.message-attachments{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:6px;margin:0 0 8px}
+.attachment-chips>span,.message-attachments>button{display:flex;align-items:center;gap:6px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:7px;font-size:11px;background:var(--soft)}
+.attachment-chips>span>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:210px}
+.attachment-chips button{display:grid;place-items:center;padding:3px}
+.attachment-chips svg{flex-shrink:0}
+.message-attachments>button{text-align:left;overflow-wrap:anywhere}
+.assistant-attachment-file{display:flex;align-items:center;gap:8px}
+.assistant-attachment-file>.assistant-file{flex:1;min-width:0;cursor:grab}
+.assistant-attachment-file>button:last-child{padding:8px;color:var(--muted);border-radius:6px}
+.assistant-attachment-file>button:last-child:hover{background:var(--soft)}
+.library-name[draggable=true]{cursor:grab}
